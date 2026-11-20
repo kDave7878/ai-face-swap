@@ -1,0 +1,26 @@
+# 模型与数据（体积大 / 含个人素材，不入库）
+*.dat
+*.pth
+*.bin
+*.onnx
+models/
+data/
+samples/
+test_images/
+*.mp4
+*.avi
+
+# 输出
+out_*.jpg
+out_*.png
+output_*.jpg
+output_*.png
+out_folder/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 系统
+.DS_Store
+Thumbs.db
