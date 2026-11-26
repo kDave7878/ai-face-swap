@@ -248,7 +248,8 @@ def main(argv=None):
     ap.add_argument("--generator", choices=["swap", "synthetic"], default="swap",
                     help="swap=复用 src 换脸流水线；synthetic=流水线自检用")
     ap.add_argument("--crop-size", type=int, default=config.CROP_SIZE)
-    ap.add_argument("--samples", type=int, default=120, help="synthetic 模式的样本规模上限")
+    ap.add_argument("--samples", type=int, default=120,
+                    help="synthetic 模式规模参数：身份数≈samples//3，总样本数会多于该值")
     ap.add_argument("--seed", type=int, default=config.SEED)
     args = ap.parse_args(argv)
 
